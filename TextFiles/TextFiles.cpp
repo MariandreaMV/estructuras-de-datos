@@ -7,7 +7,7 @@ using namespace std;
 
 int main (){
 	
-	// reading from a file  ------------------
+	// reading from a file  -------------------
 	ifstream file("example.txt");
 	string STRING;
 	
@@ -17,10 +17,10 @@ int main (){
 		file.close();
 	}else
 		cout<<"File doesn't exist";
-	//----------------------------------------
+	//-----------------------------------------
 	
 	
-	//writing on a file-----------------------
+	//writing on a file------------------------
 	ofstream file2("another_file.txt");
 	
 		if(file2.is_open()){
@@ -28,6 +28,6 @@ int main (){
 		}else
 			cout<<"Unable to open file";
 		file2.close();
-	//----------------------------------------
+	//-----------------------------------------
 	return 0;
 }

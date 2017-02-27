@@ -1,0 +1,7 @@
+# ignorar todos los archivos que terminen en .dev
+*.dev
+# ignorar todos los archivos que terminen en .exe
+*.exe
+*.layout
+*.o
+*.win
