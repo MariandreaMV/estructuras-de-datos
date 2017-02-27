@@ -81,7 +81,9 @@ void RadixSort(int array[],int size){
 				case 9:{	matrix[9][contadores[9]]=array[i];
 							contadores[9]++;
 						break;
-						}			
+						}	
+						
+								
 			}
 		}//matriz dinamica inicializada y ordenada por digitos
 	
@@ -115,12 +117,14 @@ void RadixSort(int array[],int size){
 //--------------------------Main------------------------
 int main (){
 	
-	int size=15, array[size];
+	//int size=15, array[size];
 	srand (time(NULL));
-	for(int i=0;i<size;i++) 
-		array[i]=rand()%size+1;
-	
+	//for(int i=0;i<size;i++) 
+		//array[i]=rand()%size+1;
+	int array[10]={55,-9,53,47,22,6,3,5,-1,-5};
+	int size=10;
 	RadixSort(array,size);
+	printf("%d ",-);
 	return 0;
 }
 //-----------------------end main------------------------
