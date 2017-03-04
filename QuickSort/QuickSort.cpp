@@ -1,9 +1,7 @@
 #include <iostream>
 #include <time.h>
 #include <stdlib.h>
-
-#define SUFPEQ 10
-
+#define SUFPEQ 200
 
 void bubble_sort(int vec[], int size){
 	int a;
@@ -24,14 +22,20 @@ void bubble_sort(int vec[], int size){
 	}
 }
 
+void show_me(int vector[],int size){	
+	int a;
+	for	(a=0; a<size;a++){
+		printf("vector[%d]= %d \n",a+1,vector[a]);
+	}		
+}
 
 int pivot(int array[],int size){
-	//clasifica el array tomando el primero como pivote
-	//retor na la posicion donde queda delimitado el pivote
-	int pivot=array[0],i=1,j=size-1,aux;
 	
-	while(i<j){
-		
+	//Classify the array taking the first position as a pivot
+	//Returns the position where the pivot is delimited
+	
+	int pivot=array[0],i=1,j=size-1,aux;	
+	while(i<j){		
 		while(array [i]<pivot&&i<size){
 			i++;
 		}
@@ -45,23 +49,16 @@ int pivot(int array[],int size){
 			i++;
 			j--;
 		}
-	}
-	
+	}	
 	array[0]=array[j];
 	array[j]=pivot;
 	return j;	
 }
 
-
-void show_me(int vector[],int size){	
-	int a;
-	for	(a=0; a<size;a++){
-		printf("vector[%d]= %d \n",a+1,vector[a]);
-	}		
-}
-
-
 void QUICKsort(int array[],int size){
+	
+	//this algorithm select a pivot (the first position in this case)
+	//that is in charge of subdividing the vector according to whether it is larger or smaller
 	
 	if(size<=SUFPEQ){
 		bubble_sort(array,size);
@@ -71,24 +68,18 @@ void QUICKsort(int array[],int size){
 		//array+positionPIVOT+1
 		QUICKsort(&array[positionPIVOT+1],size-positionPIVOT);
 	}
-	
 }
 
 int main(){
 
-	int size=20;
+	int size=180;
 	srand (time(NULL));
 	int array[size];
-	int in = 2;
-	for(int i=0;i<size;i++) array[i]=rand()%100+1;
+	for(int i=0;i<size;i++) array[i]=rand()%1000+1;
 	
-	
-	QUICKsort(array,size);
-	/*
 	show_me(array,size);
+	QUICKsort(array,size);
 	std::cout<<"\n\n";
-	pivot(array,size);
-	*/
 	show_me(array,size);
 
 	return 0;

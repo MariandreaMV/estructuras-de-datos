@@ -9,7 +9,6 @@ bool busquedaSimple(int array[],int size, int key){
 	return false;
 }
 
-
 bool BusquedaBinaria(int array[],int size, int key,int start,int end){
 	/*
 	int middle=(start+end)/2;
@@ -32,7 +31,6 @@ bool BusquedaBinaria(int array[],int size, int key,int start,int end){
 	}else return false;
 	*/
 }
-
 
 int find(int intArray[], int data,int size) {
    int lowerBound = 0;
@@ -73,8 +71,6 @@ int find(int intArray[], int data,int size) {
    printf("Total comparisons made: %d" , comparisons);
    return index;
 }
-
-
 
 void insertion2(int vector[],int size){
 	int aux,I,i;
