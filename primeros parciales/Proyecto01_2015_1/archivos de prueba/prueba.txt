@@ -1,0 +1,16 @@
+datos.dat
+codAlum int
+apeNoms char[10]
+nota int
+float1 float
+segundo.dat
+primero int
+segundo int
+tercero int
+tercero.dat
+nombre char[11]
+apellido char[14]
+listado int
+cuarto.dat
+numero int
+oremun int
