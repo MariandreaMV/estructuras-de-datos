@@ -1,0 +1,10 @@
+13	pedro
+15	kelvin
+36	juan
+54	andrea
+889	guille
+124	pedro
+21	kelvin
+45	juan
+98	andrea
+16	guille
