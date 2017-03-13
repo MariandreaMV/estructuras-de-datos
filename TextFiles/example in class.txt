@@ -1,0 +1,10 @@
+1	maria
+2	jose
+5	andres
+6	ana
+5	pedro
+8	laura
+7	marco
+4	juan
+5	daisy
+8	chucho
