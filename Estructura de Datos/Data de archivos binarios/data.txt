@@ -1,0 +1,17 @@
+clientes.dat
+Cedula char(12)
+NomCliente char(60)
+
+articulos.dat
+codArt int
+DsecProd char(60)
+
+ventas.dat
+CedulaC char(12)
+NnomClie char(60)
+CodArt int
+DescArt char(60)
+Cantidad int
+Pvp float
+Mes int
+Observaciones char(20)
