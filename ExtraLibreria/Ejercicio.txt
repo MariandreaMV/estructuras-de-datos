@@ -1,0 +1,15 @@
+Práctica de primer parcial
+En una libreria se
+clasifican los libros por editorial según un código entero que la
+identifica univocamente, luego cada grupo de libros de la editorial
+se clasifican independientemente por el tíitulo del libro
+(alfabeticamente). Todo con el propósito de localizar mas rápido
+cualquier texto. Si el título del libro de una editorial a buscar
+comienza por A – L se busca desde el primero hacia adelante, si
+comienza por M – Z se busca desde el último hacia atrás.
+Escriba el
+programa que lea de los archivos editorial.txt y libro.txt la
+información para generar un archivo binario y un menú para hacer
+búsquedas por código y título, por solo tíitulo, imprimir cada libro
+en el recorrido de búsqueda. Además hacer reportes de libros por
+editorial indicando la cantidad al final.
